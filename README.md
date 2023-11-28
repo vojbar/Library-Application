@@ -6,19 +6,174 @@ Tato dokumentace poskytuje podrobný přehled projektu "Aplikace knihovny", kter
 
 ## Funkční požadavky
 ### 1. Přidání knihy
-Uživatel může přidat novou knihu zadáním názvu, autora a roku vydání. Nově přidaná kniha je automaticky nastavena jako dostupná.
+#### Kódový vzor:
+```python
+def addBook(self):
+    # Získání hodnot z uživatelského vstupu
+    name = self.bookNameEntry.get()
+    author = self.authorEntry.get()
+    year = self.yearEntry.get()
+
+    # Vytvoření nového objektu knihy
+    book = {
+        "name": name,
+        "author": author,
+        "available": True,
+        "published": year,
+        "firstName": None,
+        "lastName": None
+    }
+
+    # Přidání knihy do seznamu knih
+    books.append(book)
+
+    # Vyčištění vstupních polí po přidání knihy
+    self.bookNameEntry.delete('0', 'end')
+    self.authorEntry.delete('0', 'end')
+    self.yearEntry.delete('0', 'end')
+
+    # Aktualizace seznamů v uživatelském rozhraní
+    booksList = self.bookListOptions.get()
+    self.writeBooks(booksList)
+    self.writeBorrowList()
+    self.writeReturnList()
+    self.writeDeleteList()
+```
+####Komentář:
+Funkce addBook slouží k přidání nové knihy do knihovny. Získává informace z uživatelského vstupu (název, autor, rok vydání), vytváří nový objekt knihy a přidá ho do seznamu knih. Následně vyčistí vstupní pole a aktualizuje seznamy v uživatelském rozhraní.
 
 ### 2. Odstranění knihy
-Uživatel může odstranit existující knihu ze seznamu knih.
+#### Kódový vzor:
+```python
+def removeBook(self):
+    # Získání názvu vybrané knihy k odstranění
+    selectedBook = self.selectBookDelete.get()
+
+    # Najdi knihu v seznamu knih
+    book = next((book for book in books if book['name'] == selectedBook), None)
+
+    # Odebrání knihy ze seznamu knih
+    books.remove(book)
+
+    # Nastavení výchozí hodnoty v rozhraní
+    self.selectBookDelete.set(value="Choose a book")
+
+    # Vyčištění informací o knize v rozhraní
+    self.author.configure(state="normal")
+    self.author.delete('0', 'end')
+    self.author.configure(state="disabled")
+
+    self.year.configure(state="normal")
+    self.year.delete('0', 'end')
+    self.year.configure(state="disabled")
+
+    # Aktualizace seznamů v uživatelském rozhraní
+    booksList = self.bookListOptions.get()
+    self.writeBooks(booksList)
+    self.writeBorrowList()
+    self.writeReturnList()
+    self.writeDeleteList()
+```
+####Komentář:
+Funkce removeBook slouží k odstranění knihy z knihovny. Získává název vybrané knihy k odstranění, najde odpovídající objekt v seznamu knih, provede odstranění a aktualizuje seznamy v uživatelském rozhraní.
 
 ### 3. Vypůjčení knihy
-Uživatel může označit knihu jako vypůjčenou, zadáním jména a příjmení vypůjčitele.
+#### Kódový vzor:
+```python
+def updateBookAvailabilityBorrow(self):
+    # Získání vybrané knihy k vypůjčení
+    selectedBook = self.selectBookBorrow.get()
+
+    # Najdi knihu v seznamu knih
+    book = next((book for book in books if book['name'] == selectedBook), None)
+
+    # Získání informací o vypůjčení od uživatele
+    firstName = self.nameEntry.get()
+    lastName = self.surnameEntry.get()
+
+    # Aktualizace stavu knihy a přidání informací o vypůjčení
+    book['available'] = False
+    book['firstName'] = firstName
+    book['lastName'] = lastName
+
+    # Nastavení výchozí hodnoty v rozhraní
+    self.selectBookBorrow.set(value="Choose a book")
+    self.nameEntry.delete('0', 'end')
+    self.surnameEntry.delete('0', 'end')
+
+    # Aktualizace seznamů v uživatelském rozhraní
+    booksList = self.bookListOptions.get()
+    self.writeBooks(booksList)
+    self.writeBorrowList()
+    self.writeReturnList()
+    self.writeDeleteList()
+```
+####Komentář:
+Funkce updateBookAvailabilityBorrow slouží k označení knihy jako vypůjčené a přidání informací o vypůjčení od uživatele. Získává vybranou knihu, informace o vypůjčení a provede aktualizaci stavu knihy.
 
 ### 4. Vrácení knihy
-Uživatel může vrátit vypůjčenou knihu, což aktualizuje informace o dostupnosti a vypůjčení.
+#### Kódový vzor:
+```python
+def updateBookAvailabilityReturn(self):
+    # Získání vybrané knihy k vrácení
+    selectedBook = self.selectBookReturn.get()
+
+    # Najdi knihu v seznamu knih
+    book = next((book for book in books if book['name'] == selectedBook), None)
+
+    # Nastavení stavu knihy jako dostupné a vymazání informací o vypůjčení
+    book['available'] = True
+    book['firstName'] = None
+    book['lastName'] = None
+
+    # Nastavení výchozí hodnoty v rozhraní
+    self.selectBookReturn.set(value="Choose a book")
+
+    # Vyčištění informací o knize v rozhraní
+    self.name.configure(state="normal")
+    self.name.delete('0', 'end')
+    self.name.configure(state="disabled")
+
+    self.surname.configure(state="normal")
+    self.surname.delete('0', 'end')
+    self.surname.configure(state="disabled")
+
+    # Aktualizace seznamů v uživatelském rozhraní
+    booksList = self.bookListOptions.get()
+    self.writeBooks(booksList)
+    self.writeBorrowList()
+    self.writeReturnList()
+    self.writeDeleteList()
+```
+####Komentář:
+Funkce updateBookAvailabilityReturn slouží k označení knihy jako vrácené a vymazání informací o vypůjčení. Získává vybranou knihu a provede aktualizaci stavu knihy.
 
 ### 5. Zobrazení dostupných knih
-Uživatel má možnost zobrazit seznam všech knih, pouze dostupných knih nebo vypůjčených knih.
+#### Kódový vzor:
+```python
+def writeBooks(self, option):
+    self.bookList.configure(state="normal")
+    self.bookList.delete("0.0", "end")
+
+    if (option == "All books"):
+        # Zobrazení všech knih v knihovně
+        for book in books:
+            self.bookList.insert("0.0", f"Book name: {book['name']}\nBook author: {book['author']}\nYear of publication: {book['published']}\nAvailability: {'available' if book['available'] == True else 'unavailable'}\n\n")
+    elif (option == "Only available"):
+        # Zobrazení pouze dostupných knih
+        for book in books:
+            if (book['available'] == True):
+                self.bookList.insert("0.0", f"Book name: {book['name']}\nBook author: {book['author']}\nYear of publication: {book['published']}\n\n")
+    elif (option == "Borrowed books"):
+        # Zobrazení vypůjčených knih a informací o vypůjčení
+        for book in books:
+            if (book['available'] == False):
+                self.bookList.insert("0.0", f"Book name: {book['name']}\nBook author: {book['author']}\nYear of publication: {book['published']}\nBorrower's name: {book['firstName']}\nBorrower's surname: {book['lastName']}\n\n")
+    
+    self.bookList.configure(state="disabled")
+```
+####Komentář:
+Funkce writeBooks slouží k zobrazení informací o knihách v uživatelském rozhraní podle zvoleného kritéria. Má tři možnosti: zobrazení všech knih, zobrazení pouze dostupných knih a zobrazení vypůjčených knih s informacemi o vypůjčení.
 
 ## Technická specifikace
 Aplikace byla implementována v programovacím jazyce Python s využitím knihoven Tkinter a customtkinter pro tvorbu grafického rozhraní. Žádná externí databáze nebyla použita, a všechny informace jsou ukládány v paměti programu v podobě seznamu knih.
