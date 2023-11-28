@@ -176,10 +176,12 @@ def writeBooks(self, option):
 Funkce writeBooks slouží k zobrazení informací o knihách v uživatelském rozhraní podle zvoleného kritéria. Má tři možnosti: zobrazení všech knih, zobrazení pouze dostupných knih a zobrazení vypůjčených knih s informacemi o vypůjčení.
 
 ## Technická specifikace
-Aplikace byla implementována v programovacím jazyce Python s využitím knihoven Tkinter a customtkinter pro tvorbu grafického rozhraní. Žádná externí databáze nebyla použita, a všechny informace jsou ukládány v paměti programu v podobě seznamu knih.
+Aplikace je napsána v programovacím jazyce Python, využívající knihoven Tkinter a customtkinter pro snadnou a efektivní tvorbu grafického uživatelského rozhraní. Tato volba knihoven umožňuje plynulý běh a zajišťuje, že uživatelé budou mít konzistentní a intuitivní používání aplikace.
+
+Jedním z významných rozhodnutí při návrhu aplikace bylo záměrné vyhnutí se použití externí databáze. Namísto toho jsou všechny informace o knihách ukládány přímo v paměti programu ve formě seznamu knih. To zjednodušuje implementaci a udržování aplikace, zároveň však zachovává dostatečnou efektivitu pro účely tohoto projektu.
 
 ## Uživatelské rozhraní
-Uživatelské rozhraní je navrženo tak, aby bylo intuitivní a přehledné. Snímky obrazovky a popisy v dokumentaci vizualizují navigaci a interakci uživatele s aplikací.
+Uživatelské rozhraní bylo pečlivě navrženo s důrazem na jednoduchost, přehlednost a intuitivnost. Tento přístup umožňuje uživatelům snadno a rychle porozumět funkcím a možnostem aplikace. Celkový design je koncipován tak, aby uživatelé rychle a efektivně zvládli správu knih v knihovně pomocí jednoduchých a intuitivních akcí.
 
 ## Postup implementace
 Projekt byl implementován v několika krocích. Nejprve byla vytvořena kostra aplikace s pomocí knihoven Tkinter a customtkinter. Následně byly implementovány jednotlivé funkce aplikace, včetně přidání knihy, odstranění knihy, vypůjčení a vrácení knihy.
