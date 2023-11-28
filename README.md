@@ -251,4 +251,5 @@ kého rozhraní pro jednoduchou rezervaci.
 **Popis:** Přidání funkcionality filtrování knih podle různých kritérií (např., žánr, autor, rok vydání) zlepší uživatelský zážitek při procházení knižního katalogu.
 <br>**Technické aspekty:** Implementace filtrů a rozšíření vyhledávacích funkcí.
 
+### Ukázka funkčnosti
 https://github.com/vojbar/Library-Application/assets/71731864/6eaeed1a-34db-43c5-b5be-827a4ebdbb14
