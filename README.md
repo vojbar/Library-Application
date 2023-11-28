@@ -39,7 +39,7 @@ def addBook(self):
     self.writeReturnList()
     self.writeDeleteList()
 ```
-####Komentář:
+#### Komentář:
 Funkce addBook slouží k přidání nové knihy do knihovny. Získává informace z uživatelského vstupu (název, autor, rok vydání), vytváří nový objekt knihy a přidá ho do seznamu knih. Následně vyčistí vstupní pole a aktualizuje seznamy v uživatelském rozhraní.
 
 ### 2. Odstranění knihy
@@ -74,7 +74,7 @@ def removeBook(self):
     self.writeReturnList()
     self.writeDeleteList()
 ```
-####Komentář:
+#### Komentář:
 Funkce removeBook slouží k odstranění knihy z knihovny. Získává název vybrané knihy k odstranění, najde odpovídající objekt v seznamu knih, provede odstranění a aktualizuje seznamy v uživatelském rozhraní.
 
 ### 3. Vypůjčení knihy
@@ -108,7 +108,7 @@ def updateBookAvailabilityBorrow(self):
     self.writeReturnList()
     self.writeDeleteList()
 ```
-####Komentář:
+#### Komentář:
 Funkce updateBookAvailabilityBorrow slouží k označení knihy jako vypůjčené a přidání informací o vypůjčení od uživatele. Získává vybranou knihu, informace o vypůjčení a provede aktualizaci stavu knihy.
 
 ### 4. Vrácení knihy
@@ -145,7 +145,7 @@ def updateBookAvailabilityReturn(self):
     self.writeReturnList()
     self.writeDeleteList()
 ```
-####Komentář:
+#### Komentář:
 Funkce updateBookAvailabilityReturn slouží k označení knihy jako vrácené a vymazání informací o vypůjčení. Získává vybranou knihu a provede aktualizaci stavu knihy.
 
 ### 5. Zobrazení dostupných knih
@@ -172,7 +172,7 @@ def writeBooks(self, option):
     
     self.bookList.configure(state="disabled")
 ```
-####Komentář:
+#### Komentář:
 Funkce writeBooks slouží k zobrazení informací o knihách v uživatelském rozhraní podle zvoleného kritéria. Má tři možnosti: zobrazení všech knih, zobrazení pouze dostupných knih a zobrazení vypůjčených knih s informacemi o vypůjčení.
 
 ## Technická specifikace
