@@ -209,4 +209,12 @@ Projekt byl implementován v několika krocích. Nejprve byla vytvořena kostra 
 Provedená testování zahrnovala ověření správné funkcionality jednotlivých částí aplikace. Byly testovány scénáře, jako je přidání knihy, odstranění knihy, vypůjčení a vrácení knihy. Všechny testy byly úspěšné a potvrdily správnou funkcionalitu aplikace.
 
 ## Závěr a budoucí rozvoj
-Celkově je projekt "Aplikace knihovny" úspěšným řešením zadání s funkcionalitou odpovídající požadavkům. Pro budoucí rozvoj by bylo možné zvážit implementaci dalších funkcí, jako je možnost rezervace knihy, filtrování knih podle různých kritérií nebo rozšíření možností uživatelského rozhraní pro ještě pohodlnější používání aplikace.
+Celkově je projekt "Aplikace knihovny" úspěšným řešením zadání s funkcionalitou odpovídající požadavkům. Pro budoucí rozvoj by bylo možné zvážit implementaci dalších funkcí, jako je možnost rezervace knihy nebo filtrování knih podle různých kritérií.
+
+### Rezervace knihy
+#### Popis: Implementace možnosti rezervovat knihu umožní uživatelům zajistit si dostupnost určité knihy předem.
+#### Technické aspekty: Nová databázová struktura pro sledování rezervací, rozšíření uživatelského rozhraní pro jednoduchou rezervaci.
+
+### Filtrování knih
+#### Popis: Přidání funkcionality filtrování knih podle různých kritérií (např., žánr, autor, rok vydání) zlepší uživatelský zážitek při procházení knižního katalogu.
+#### Technické aspekty: Implementace filtrů a rozšíření vyhledávacích funkcí.
