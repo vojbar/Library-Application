@@ -206,7 +206,37 @@ Projekt byl implementován v několika krocích. Nejprve byla vytvořena kostra 
 - Ošetření vstupů a aktualizace seznamu knih.
 
 ## Testování
-Provedená testování zahrnovala ověření správné funkcionality jednotlivých částí aplikace. Byly testovány scénáře, jako je přidání knihy, odstranění knihy, vypůjčení a vrácení knihy. Všechny testy byly úspěšné a potvrdily správnou funkcionalitu aplikace.
+Testování aplikace bylo prováděno s cílem ověřit správnou funkčnost jednotlivých částí a scénářů používání. Testování se zaměřilo na klíčové funkce, jako je přidání knihy, odstranění knihy, vypůjčení a vrácení knihy.
+
+**1. Přidání knihy:**
+**Postup testování:**
+1. Vstupní pole pro název knihy, autora a rok vydání byly vyplněny správnými údaji.
+2. Stisknuto tlačítko "Přidat knihu".
+**Očekávaný výsledek:** Nová kniha by měla být přidána do seznamu knih.
+
+**2. Odstranění knihy**
+**Postup testování:**
+1. Z rozbalovacího seznamu byla vybrána kniha k odstranění.
+2. Stisknuto tlačítko "Odstranit knihu".
+**Očekávaný výsledek:** Vybraná kniha by měla být odstraněna ze seznamu knih.
+
+**3. Vypůjčení knihy:**
+**Postup testování:**
+1. Z rozbalovacího seznamu byla vybrána kniha k vypůjčení.
+2. Stisknuto tlačítko "Vypůjčit knihu".
+**Očekávaný výsledek:** Stav vybrané knihy by měl být změněn na "Vypůjčeno" a přidána do seznamu vypůjčených knih.
+
+**4. Vrácení knihy:**
+**Postup testování:**
+1) Z rozbalovacího seznamu byla vybrána kniha k vrácení.
+2) Stisknuto tlačítko "Vrátit knihu".
+**Očekávaný výsledek:** Stav vybrané knihy by měl být změněn na "Dostupná" a přesunuta zpět do seznamu dostupných knih.
+
+**Celkový výsledek testování:**
+Všechny testy byly úspěšné, a to včetně klíčových funkcí aplikace. Žádné nekonzistence, chyby nebo neočekávané chování nebyly zaznamenány během testování, což potvrzuje správnou funkcionalitu a stabilitu aplikace.
+
+**Poznámka k testování:**
+Testování probíhalo v různých scénářích, zahrnujících různé kombinace akcí a operací prováděných uživatelem. Dále byly simulovány situace, jako je pokus o vypůjčení již vypůjčené knihy nebo odstranění neexistující knihy, aby bylo zajištěno správné zpracování neobvyklých situací.
 
 ## Závěr a budoucí rozvoj
 Celkově je projekt "Aplikace knihovny" úspěšným řešením zadání s funkcionalitou odpovídající požadavkům. Pro budoucí rozvoj by bylo možné zvážit implementaci dalších funkcí, jako je možnost rezervace knihy nebo filtrování knih podle různých kritérií.
