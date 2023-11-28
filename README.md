@@ -5,7 +5,7 @@ Tato dokumentace poskytuje podrobný přehled projektu "Aplikace knihovny", kter
 "Aplikace knihovny" slouží k efektivní správě knih v knihovně. Základní funkce aplikace zahrnují přidání knihy, odstranění knihy, vypůjčení knihy, vrácení knihy a zobrazení seznamu dostupných knih. Aplikace umožňuje uživatelům interagovat s knihami prostřednictvím grafického rozhraní, což zajišťuje snadnou a intuitivní obsluhu.
 
 ## Funkční požadavky
-###1. Přidání knihy
+### 1. Přidání knihy
 Uživatel může přidat novou knihu zadáním názvu, autora a roku vydání. Nově přidaná kniha je automaticky nastavena jako dostupná.
 
 ### 2. Odstranění knihy
@@ -30,18 +30,18 @@ Uživatelské rozhraní je navrženo tak, aby bylo intuitivní a přehledné. Sn
 Projekt byl implementován v několika krocích. Nejprve byla vytvořena kostra aplikace s pomocí knihoven Tkinter a customtkinter. Následně byly implementovány jednotlivé funkce aplikace, včetně přidání knihy, odstranění knihy, vypůjčení a vrácení knihy.
 
 ### Chronologie implementace:
-1.Vytvoření kostry aplikace v Tkinter a customtkinter.
+#### 1.Vytvoření kostry aplikace v Tkinter a customtkinter.
 
-2. Implementace přidání knihy:
+#### 2. Implementace přidání knihy:
 Vytvoření formuláře pro zadání informací o knize.
 Ošetření vstupů a aktualizace seznamu knih.
 Implementace odstranění knihy:
 
-3. Vytvoření rozhraní pro výběr knihy k odstranění.
+#### 3. Vytvoření rozhraní pro výběr knihy k odstranění.
 Ošetření vstupů a aktualizace seznamu knih.
 Implementace vypůjčení knihy:
 
-4. Vytvoření formuláře pro zadání informací o vypůjčení knihy.
+#### 4. Vytvoření formuláře pro zadání informací o vypůjčení knihy.
 Ošetření vstupů a aktualizace seznamu knih.
 Implementace vrácení knihy:
 
