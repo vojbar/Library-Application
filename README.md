@@ -232,10 +232,10 @@ Testování aplikace bylo prováděno s cílem ověřit správnou funkčnost jed
 2) Stisknuto tlačítko "Vrátit knihu".
 **Očekávaný výsledek:** Stav vybrané knihy by měl být změněn na "Dostupná" a přesunuta zpět do seznamu dostupných knih.
 
-**Celkový výsledek testování:**
+#### Celkový výsledek testování:
 Všechny testy byly úspěšné, a to včetně klíčových funkcí aplikace. Žádné nekonzistence, chyby nebo neočekávané chování nebyly zaznamenány během testování, což potvrzuje správnou funkcionalitu a stabilitu aplikace.
 
-**Poznámka k testování:**
+#### Poznámka k testování:
 Testování probíhalo v různých scénářích, zahrnujících různé kombinace akcí a operací prováděných uživatelem. Dále byly simulovány situace, jako je pokus o vypůjčení již vypůjčené knihy nebo odstranění neexistující knihy, aby bylo zajištěno správné zpracování neobvyklých situací.
 
 ## Závěr a budoucí rozvoj
