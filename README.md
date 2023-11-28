@@ -30,7 +30,7 @@ Uživatelské rozhraní je navrženo tak, aby bylo intuitivní a přehledné. Sn
 Projekt byl implementován v několika krocích. Nejprve byla vytvořena kostra aplikace s pomocí knihoven Tkinter a customtkinter. Následně byly implementovány jednotlivé funkce aplikace, včetně přidání knihy, odstranění knihy, vypůjčení a vrácení knihy.
 
 ### Chronologie implementace:
-#### 1.Vytvoření kostry aplikace v Tkinter a customtkinter.
+#### 1. Vytvoření kostry aplikace v Tkinter a customtkinter.
 
 #### 2. Implementace přidání knihy:
 Vytvoření formuláře pro zadání informací o knize.
@@ -45,9 +45,10 @@ Implementace vypůjčení knihy:
 Ošetření vstupů a aktualizace seznamu knih.
 Implementace vrácení knihy:
 
-5. Vytvoření rozhraní pro výběr vrácené knihy.
+#### 5. Vytvoření rozhraní pro výběr vrácené knihy.
 Ošetření vstupů a aktualizace seznamu knih.
-Testování
+
+## Testování
 Provedená testování zahrnovala ověření správné funkcionality jednotlivých částí aplikace. Byly testovány scénáře, jako je přidání knihy, odstranění knihy, vypůjčení a vrácení knihy. Všechny testy byly úspěšné a potvrdily správnou funkcionalitu aplikace.
 
 ## Závěr a budoucí rozvoj
