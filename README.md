@@ -213,8 +213,8 @@ Celkově je projekt "Aplikace knihovny" úspěšným řešením zadání s funkc
 
 ### Rezervace knihy
 **Popis:** Implementace možnosti rezervovat knihu umožní uživatelům zajistit si dostupnost určité knihy předem.
-**Technické aspekty:** Nová databázová struktura pro sledování rezervací, rozšíření uživatelského rozhraní pro jednoduchou rezervaci.
+<br>**Technické aspekty:** Nová databázová struktura pro sledování rezervací, rozšíření uživatelského rozhraní pro jednoduchou rezervaci.
 
 ### Filtrování knih
 **Popis:** Přidání funkcionality filtrování knih podle různých kritérií (např., žánr, autor, rok vydání) zlepší uživatelský zážitek při procházení knižního katalogu.
-**Technické aspekty:** Implementace filtrů a rozšíření vyhledávacích funkcí.
+<br>**Technické aspekty:** Implementace filtrů a rozšíření vyhledávacích funkcí.
