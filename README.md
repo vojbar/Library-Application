@@ -187,21 +187,21 @@ Uživatelské rozhraní bylo pečlivě navrženo s důrazem na jednoduchost, př
 Projekt byl implementován v několika krocích. Nejprve byla vytvořena kostra aplikace s pomocí knihoven Tkinter a customtkinter. Následně byly implementovány jednotlivé funkce aplikace, včetně přidání knihy, odstranění knihy, vypůjčení a vrácení knihy.
 
 ### Chronologie implementace:
-#### 1. Vytvoření kostry aplikace v Tkinter a customtkinter.
+**1. Vytvoření kostry aplikace v Tkinter a customtkinter.**
 
-#### 2. Implementace přidání knihy:
+**2. Implementace přidání knihy:**
 - Vytvoření formuláře pro zadání informací o knize.
 - Ošetření vstupů a aktualizace seznamu knih.
 
-#### 3. Implementace odstranění knihy:
+**3. Implementace odstranění knihy:**
 - Vytvoření rozhraní pro výběr knihy k odstranění.
 - Ošetření vstupů a aktualizace seznamu knih.
 
-#### 4. Implementace vypůjčení knihy:
+**4. Implementace vypůjčení knihy:**
 - Vytvoření formuláře pro zadání informací o vypůjčení knihy.
 - Ošetření vstupů a aktualizace seznamu knih.
 
-#### 5. Implementace vrácení knihy:
+**5. Implementace vrácení knihy:**
 - Vytvoření rozhraní pro výběr vrácené knihy.
 - Ošetření vstupů a aktualizace seznamu knih.
 
@@ -212,9 +212,9 @@ Provedená testování zahrnovala ověření správné funkcionality jednotlivý
 Celkově je projekt "Aplikace knihovny" úspěšným řešením zadání s funkcionalitou odpovídající požadavkům. Pro budoucí rozvoj by bylo možné zvážit implementaci dalších funkcí, jako je možnost rezervace knihy nebo filtrování knih podle různých kritérií.
 
 ### Rezervace knihy
-#### Popis: Implementace možnosti rezervovat knihu umožní uživatelům zajistit si dostupnost určité knihy předem.
-#### Technické aspekty: Nová databázová struktura pro sledování rezervací, rozšíření uživatelského rozhraní pro jednoduchou rezervaci.
+**Popis:** Implementace možnosti rezervovat knihu umožní uživatelům zajistit si dostupnost určité knihy předem.
+**Technické aspekty:** Nová databázová struktura pro sledování rezervací, rozšíření uživatelského rozhraní pro jednoduchou rezervaci.
 
 ### Filtrování knih
-#### Popis: Přidání funkcionality filtrování knih podle různých kritérií (např., žánr, autor, rok vydání) zlepší uživatelský zážitek při procházení knižního katalogu.
-#### Technické aspekty: Implementace filtrů a rozšíření vyhledávacích funkcí.
+**Popis:** Přidání funkcionality filtrování knih podle různých kritérií (např., žánr, autor, rok vydání) zlepší uživatelský zážitek při procházení knižního katalogu.
+**Technické aspekty:** Implementace filtrů a rozšíření vyhledávacích funkcí.
