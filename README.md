@@ -2,7 +2,7 @@
 Tato dokumentace poskytuje podrobný přehled projektu "Aplikace knihovny", který byl vytvořen jako součást školního zadání do hodiny programování. Projekt je realizován v programovacím jazyce Python s využitím knihoven Tkinter a customtkinter pro tvorbu grafického uživatelského rozhraní.
 
 ## Popis aplikace
-"Aplikace knihovny" slouží k efektivní správě knih v knihovně. Základní funkce aplikace zahrnují přidání knihy, odstranění knihy, vypůjčení knihy, vrácení knihy a zobrazení seznamu dostupných knih. Aplikace umožňuje uživatelům interagovat s knihami prostřednictvím grafického rozhraní, což zajišťuje snadnou a intuitivní obsluhu.
+"Aplikace knihovny" slouží k efektivní správě knih v knihovně. Základní funkce aplikace zahrnují přidání knihy, odstranění knihy, vypůjčení knihy, vrácení knihy a zobrazení seznamu dostupných knih. Aplikace umožňuje uživatelům interagovat s knihami prostřednictvím grafického rozhraní, což zajišťuje snadné a intuitivní ovládání.
 
 ## Funkční požadavky
 ### 1. Přidání knihy
