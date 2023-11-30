@@ -209,28 +209,28 @@ Projekt byl implementován v několika krocích. Nejprve byla vytvořena kostra 
 Testování aplikace bylo prováděno s cílem ověřit správnou funkčnost jednotlivých částí a scénářů používání. Testování se zaměřilo na klíčové funkce, jako je přidání knihy, odstranění knihy, vypůjčení a vrácení knihy.
 
 **1. Přidání knihy:**
-**Postup testování:**
+<br>**Postup testování:**
 1. Vstupní pole pro název knihy, autora a rok vydání byly vyplněny správnými údaji.
 2. Stisknuto tlačítko "Přidat knihu".
-**Očekávaný výsledek:** Nová kniha by měla být přidána do seznamu knih.
+<br>**Očekávaný výsledek:** Nová kniha by měla být přidána do seznamu knih.
 
 **2. Odstranění knihy**
-**Postup testování:**
+<br>**Postup testování:**
 1. Z rozbalovacího seznamu byla vybrána kniha k odstranění.
 2. Stisknuto tlačítko "Odstranit knihu".
-**Očekávaný výsledek:** Vybraná kniha by měla být odstraněna ze seznamu knih.
+<br>**Očekávaný výsledek:** Vybraná kniha by měla být odstraněna ze seznamu knih.
 
 **3. Vypůjčení knihy:**
-**Postup testování:**
+<br>**Postup testování:**
 1. Z rozbalovacího seznamu byla vybrána kniha k vypůjčení.
 2. Stisknuto tlačítko "Vypůjčit knihu".
-**Očekávaný výsledek:** Stav vybrané knihy by měl být změněn na "Vypůjčeno" a přidána do seznamu vypůjčených knih.
+<br>**Očekávaný výsledek:** Stav vybrané knihy by měl být změněn na "Vypůjčeno" a přidána do seznamu vypůjčených knih.
 
 **4. Vrácení knihy:**
-**Postup testování:**
+<br>**Postup testování:**
 1) Z rozbalovacího seznamu byla vybrána kniha k vrácení.
 2) Stisknuto tlačítko "Vrátit knihu".
-**Očekávaný výsledek:** Stav vybrané knihy by měl být změněn na "Dostupná" a přesunuta zpět do seznamu dostupných knih.
+<br>**Očekávaný výsledek:** Stav vybrané knihy by měl být změněn na "Dostupná" a přesunuta zpět do seznamu dostupných knih.
 
 #### Celkový výsledek testování:
 Všechny testy byly úspěšné, a to včetně klíčových funkcí aplikace. Žádné nekonzistence, chyby nebo neočekávané chování nebyly zaznamenány během testování, což potvrzuje správnou funkcionalitu a stabilitu aplikace.
